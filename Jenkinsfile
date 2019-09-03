@@ -8,21 +8,18 @@ pipeline {
      
      causeString: 'Triggered on $ref',
      
-     token: 'aaabbb',
+     token: 'jfkshfisfsk',
      
      printContributedVariables: true,
      printPostContent: true,
      
-     silentResponse: false,
-    
-     regexpFilterText: '$ref'
+     silentResponse: false
     )
   }
   stages {
     stage('Some step') {
       steps {
-        sh "echo $ref"
-        echo "Success!"
+        echo "Running"
       }
     }
   }
