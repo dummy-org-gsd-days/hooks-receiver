@@ -6,7 +6,8 @@ pipeline {
       [key: 'action', value: '$.action'],
       [key: 'merged', value: '$.pull_request.merged'],
       [key: 'created_at', value: '$.pull_request.created_at'],
-      [key: 'merged_at', value: '$.pull_request.merged_at']
+      [key: 'merged_at', value: '$.pull_request.merged_at'],
+      [key: 'merged_at', value: '$.pull_request.repo.name']
      ],
 
      causeString: 'Triggered on $action',
